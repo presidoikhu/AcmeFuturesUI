@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Website</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
+</head>
+<body class="light-mode">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <img src="img/logo.jpg" class="logo btn btn-outline-light ms-3 mx-3">
+            <a class="navbar-brand" href="#">Acme Futures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-us">Why-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- Toggle for Dark/Light Mode -->
+                <button id="theme-toggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center" id="Hero">
+        <div class="container text-center">
+            <h1 class="display-1">Welcome to Acme Futures</h1>
+            <p class="lead mt-3">The Future of Cryptocurrency Trading Starts Here.</p>
+            <a href="#pricing" class="btn btn-primary btn-lg mt-4">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Api for crypto prices -->
+    <div class="mt-4">
+    <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22US%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22Bitcoin%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22VANTAGE%3ASP500%22%7D%2C%7B%22description%22%3A%22Ethereum%22%2C%22proName%22%3A%22CRYPTOCAP%3AETH%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AGBPUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A76%2C%22utm_source%22%3A%22molpux.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22molpux.com%2Findex.htm%22%7D" style="box-sizing: border-box; display: block; height: 72px; width: 100%;"></iframe>
+</div>
+    <!-- About Start -->
+    <section class="py-5 bg-light mb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="img/what-we-do2.png" alt="No bank account needed. Plugins & supported coins." class="img-fluid rounded shadow-sm" style="width:100%; height:100%;">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-4 font-weight-bold mb-4">Little Ideas <span class="text-warning">About What We Do</span></h2>
+                    <p class="lead mb-4">Enjoy a top-notch crypto payment gateway and the best crypto wallet services on Acme Futures. Thanks to the following features:</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center p-3 bg-white border rounded mb-3 shadow-sm">
+                            <img src="https://coinremitter.com/assets/img/about-check-arrow.png" alt="check arrow" class="mr-3">
+                            <span class="ms-3">Support of major cryptocurrencies</span>
+                        </li>
+                        <li class="d-flex align-items-center p-3 bg-white border rounded mb-3 shadow-sm">
+                            <img src="https://coinremitter.com/assets/img/about-check-arrow.png" alt="check arrow" class="mr-3">
+                            <span class="ms-3">No ID and no bank account required</span>
+                        </li>
+                        <li class="d-flex align-items-center p-3 bg-white border rounded mb-3 shadow-sm">
+                            <img src="https://coinremitter.com/assets/img/about-check-arrow.png" alt="check arrow" class="mr-3">
+                            <span class="ms-3">Free access to limited services</span>
+                        </li>
+                        <li class="d-flex align-items-center p-3 bg-white border rounded mb-3 shadow-sm">
+                            <img src="https://coinremitter.com/assets/img/about-check-arrow.png" alt="check arrow" class="mr-3">
+                            <spanclass class="ms-3">Global, safe, and anonymous</spanclass>
+                        </li>
+                    </ul>
+                    <a asp-controller="Home" asp-action="signUp" class="btn btn-warning btn-lg text-white">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About End -->
+
+
+    <!-- why us start-->
+<!-- Why Us Section -->
+<section id="why-us" class="py-5 mt-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="why-us-card text-center p-4">
+                    <h3>Expert Team</h3>
+                    <p>Our team consists of industry experts with years of experience in cryptocurrency trading. We’re here to guide you through every step.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="why-us-card text-center p-4">
+                    <h3>Advanced Technology</h3>
+                    <p>We use state-of-the-art technology to ensure secure and efficient trading. Our platform provides the best tools for successful trading.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="why-us-card text-center p-4">
+                    <h3>Customer Support</h3>
+                    <p>Our dedicated customer support team is available 24/7 to assist you with any queries or issues. We're committed to providing excellent service.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="why-us-card text-center p-4">
+                    <h3>Secure Transactions</h3>
+                    <p>We prioritize security with advanced encryption methods to protect your transactions and personal data from unauthorized access.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="why-us-card text-center p-4">
+                    <h3>Competitive Fees</h3>
+                    <p>Our trading fees are among the most competitive in the industry, ensuring that you get the best value for your investments.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="why-us-card text-center p-4">
+                    <h3>Innovative Tools</h3>
+                    <p>Access a range of innovative tools and features that help you analyze market trends and make informed trading decisions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- why us finish -->
+
+
+      <!-- our services start -->
+<!-- Our Services Section -->
+<section id="our-services" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-chart-line fa-3x" style="color: rgb(245, 158, 11);"></i>
+                    </div>
+                    <h3>Trading Analytics</h3>
+                    <p>Our platform offers advanced trading analytics to help you make data-driven decisions and maximize your trading potential.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-lock fa-3x" style="color: rgb(245, 158, 11);"></i>
+                    </div>
+                    <h3>Secure Trading</h3>
+                    <p>We provide a secure trading environment with the latest encryption and security measures to ensure your transactions are safe.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-user-cog fa-3x" style="color: rgb(245, 158, 11);"></i>
+                    </div>
+                    <h3>Personalized Support</h3>
+                    <p>Our dedicated support team is available to provide personalized assistance and ensure you get the help you need for successful trading.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-bullseye fa-3x" style="color: rgb(245, 158, 11);"></i>
+                    </div>
+                    <h3>Market Insights</h3>
+                    <p>Gain access to in-depth market insights and forecasts to stay ahead of trends and make informed trading decisions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-wallet fa-3x" style="color: rgb(245, 158, 11);"></i>
+                    </div>
+                    <h3>Portfolio Management</h3>
+                    <p>Manage and optimize your investment portfolio with our easy-to-use tools designed to help you track and grow your assets.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-cogs fa-3x" style="color: rgb(245, 158, 11);"></i>
+                    </div>
+                    <h3>Advanced Tools</h3>
+                    <p>Access a suite of advanced trading tools that enhance your trading strategy and provide you with a competitive edge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  our services finish  -->
+
+<!--  faq section start  -->
+<!-- FAQ Section -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is cryptocurrency trading?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Cryptocurrency trading involves buying and selling digital currencies like Bitcoin and Ethereum. Traders aim to profit from price fluctuations in the cryptocurrency market.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I start trading?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        To start trading, you need to create an account on a trading platform, deposit funds, and start executing trades. Make sure to do thorough research or consult with experts before starting.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Is cryptocurrency trading safe?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        While cryptocurrency trading involves risks, using reputable trading platforms with robust security measures can help mitigate those risks. Always be cautious and follow best practices for security.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What fees are associated with trading?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Fees can vary depending on the platform and type of trade. Common fees include transaction fees, withdrawal fees, and sometimes trading fees based on volume.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Can I trade cryptocurrencies on mobile?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, many trading platforms offer mobile apps that allow you to trade cryptocurrencies on the go. Ensure the app is secure and offers all the features you need.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        What should I consider before trading?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Before trading, consider factors such as market volatility, your investment goals, risk tolerance, and the reliability of the trading platform. Educate yourself and plan your strategy accordingly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  faq section end  -->
+
+<!-- footer starts -->
+ <!-- Footer Start -->
+<footer class="bg-light footer mt-5 pt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <h1 class="mb-4" style="color: rgb(245, 158, 11);">
+                    <img class="img-fluid me-2 rounded" src="img/logo.jpeg" alt="" style="width: 45px;">
+                    Acme Futures
+                </h1>
+                <p class="text-muted">
+                    At Acme Futures, we provide secure and seamless solutions for digital currency transactions and investments.
+                    Join us as we explore the future of decentralized finance and digital assets,
+                    offering cutting-edge technology to manage your crypto portfolio.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-4">Newsletter</h5>
+                <p class="text-muted">Subscribe to receive updates and tips about cryptocurrency investments and trends.</p>
+                <div class="position-relative">
+                    <input class="form-control bg-transparent border-2 border-warning py-3 ps-4 pe-5" type="email" placeholder="Your email" aria-label="Your email">
+                    <button type="button" class="btn btn-warning text-white position-absolute top-0 end-0 mt-2 me-2">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-4">Get In Touch</h5>
+                <p class="text-muted"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</p>
+                <p class="text-muted"><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
+                <p class="text-muted"><i class="fa fa-envelope me-2"></i>info@acmefutures.com</p>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-4">Our Services</h5>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Currency Wallet</a>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Currency Transaction</a>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Bitcoin Investment</a>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Token Sale</a>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-4">Quick Links</h5>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">About Us</a>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Contact Us</a>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Our Services</a>
+                <a class="d-block mb-2" href="" style="color: rgb(245, 158, 11);">Terms & Conditions</a>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-4">Follow Us</h5>
+                <div class="d-flex">
+                    <a class="btn btn-square rounded-circle me-1" href="" style="color: #1DA1F2; border: 2px solid #1DA1F2;"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square rounded-circle me-1" href="" style="color: #1877F2; border: 2px solid #1877F2;"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle me-1" href="" style="color: #FF0000; border: 2px solid #FF0000;"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square rounded-circle me-1" href="" style="color: #0A66C2; border: 2px solid #0A66C2;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">
+                &copy; <a href="#" style="color: rgb(245, 158, 11); text-decoration: none;">Acme Futures</a>, All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

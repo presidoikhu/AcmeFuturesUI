@@ -1,0 +1,354 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* logo */
+
+.logo
+{
+  height: 50px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(245, 158, 11);
+}
+
+.navbar-brand {
+    color: rgb(245, 158, 11);
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(245, 158, 11);
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.btn-outline-light {
+    border-color: rgb(245, 158, 11);
+    color: rgb(245, 158, 11);
+    transition: background-color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: rgb(245, 158, 11);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img/minimalistic-still-life-arrangement-with-cryptocurrency\ \(1\).jpg'); /* Ensure the path is correct */
+    background-size: cover; /* Covers the container but may crop */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(245, 158, 11);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.hero .btn-primary {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: rgb(245, 158, 11);
+    border: none;
+    padding: 10px 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn-primary:hover {
+    background-color: #fff;
+    color: rgb(245, 158, 11);
+}
+
+/* Dark Mode Styling */
+body.dark-mode .navbar {
+    background-color: #222;
+}
+
+body.dark-mode .navbar-brand, 
+body.dark-mode .nav-link {
+    color: rgb(245, 158, 11);
+}
+
+body.dark-mode .hero h1, 
+body.dark-mode .hero p {
+    color: #fff;
+}
+
+body.dark-mode .btn-primary {
+    background-color: rgb(245, 158, 11);
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #fff;
+    color: rgb(245, 158, 11);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+}
+
+/* why us start */
+/* Why Us Section */
+#why-us {
+    background-color: #f4f4f4; /* Light background color */
+    color: #000;
+}
+
+#why-us h2 {
+    color: rgb(245, 158, 11); /* Accent color */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.why-us-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-us-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.why-us-card h3 {
+    color: rgb(245, 158, 11); /* Accent color for headings */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.why-us-card p {
+    color: #333; /* Darker text color for readability */
+    font-size: 1rem;
+}
+
+/* our services start */
+/* Our Services Section */
+#our-services {
+    background-color: #f4f4f4; /* Light background color */
+    color: #000;
+}
+
+#our-services h2 {
+    color: rgb(245, 158, 11); /* Accent color */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.service-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.service-icon {
+    background-color:rgb(200 195 186); /* Accent color background for icons */
+    border-radius: 50%; /* Circular background */
+    padding: 15px;
+}
+
+.service-card h3 {
+    color: rgb(245, 158, 11); /* Accent color for headings */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #333; /* Darker text color for readability */
+    font-size: 1rem;
+}
+
+/* our services finish */
+
+/* faq section start */
+/* FAQ Section */
+#faq {
+    background-color: #fff; /* White background color */
+    color: #000;
+}
+
+#faq h2 {
+    color: rgb(245, 158, 11); /* Accent color */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.accordion-button {
+    background-color: rgb(245, 158, 11); /* Accent color for buttons */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #333; /* Darker background for expanded button */
+    color: #fff;
+}
+
+.accordion-button:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+.accordion-item {
+    border: 1px solid #ddd; /* Light gray border for items */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.accordion-body {
+    background-color: #f4f4f4; /* Light background for content */
+    color: #333; /* Darker text color for readability */
+    font-size: 1rem;
+}
+
+/* faq section end */
+
+/* footer starts */
+/* Footer */
+
+.footer.bg-white {
+    background-color: #fff !important;
+    color: #a1acb8;
+  }
+  .footer.bg-white .footer-link {
+    color: #a1acb8;
+  }
+  .footer.bg-white .footer-link:hover, .footer.bg-white .footer-link:focus {
+    color: #697a8d;
+  }
+  .footer.bg-white .footer-link.disabled {
+    color: #c7cdd4 !important;
+  }
+  .footer.bg-white .footer-text {
+    color: #697a8d;
+  }
+  .footer.bg-white .show > .footer-link,
+  .footer.bg-white .active > .footer-link,
+  .footer.bg-white .footer-link.show,
+  .footer.bg-white .footer-link.active {
+    color: #697a8d;
+  }
+  .footer.bg-white hr {
+    border-color: rgba(105, 122, 141, 0.075);
+  }
+  
+  .footer.bg-light {
+    background-color: #eceef1 !important;
+    color: #a1acb8;
+  }
+  .footer.bg-light .footer-link {
+    color: #a1acb8;
+  }
+  .footer.bg-light .footer-link:hover, .footer.bg-light .footer-link:focus {
+    color: #697a8d;
+  }
+  .footer.bg-light .footer-link.disabled {
+    color: #bfc6cf !important;
+  }
+  .footer.bg-light .footer-text {
+    color: #697a8d;
+  }
+  .footer.bg-light .show > .footer-link,
+  .footer.bg-light .active > .footer-link,
+  .footer.bg-light .footer-link.show,
+  .footer.bg-light .footer-link.active {
+    color: #697a8d;
+  }
+  .footer.bg-light hr {
+    border-color: rgba(105, 122, 141, 0.0783835294);
+  }
+  
+
+/* footer ends */
+.footer-link {
+    display: inline-block;
+  }
+  
+  .footer-light {
+    color: rgba(67, 89, 113, 0.5);
+  }
+  .footer-light .footer-text {
+    color: #697a8d;
+  }
+  .footer-light .footer-link {
+    color: rgba(67, 89, 113, 0.5);
+  }
+  .footer-light .footer-link:hover, .footer-light .footer-link:focus {
+    color: #697a8d;
+  }
+  .footer-light .footer-link.disabled {
+    color: rgba(67, 89, 113, 0.3) !important;
+  }
+  .footer-light .show > .footer-link,
+  .footer-light .active > .footer-link,
+  .footer-light .footer-link.show,
+  .footer-light .footer-link.active {
+    color: #697a8d;
+  }
+  .footer-light hr {
+    border-color: rgba(0, 0, 0, 0.06);
+  }
